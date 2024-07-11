@@ -1,0 +1,32 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input AddBalanceInput {
+  amount: Int!
+  userId: Int!
+}
+
+input FindById {
+  userId: Int!
+}
+
+type Mutation {
+  addBalance(input: AddBalanceInput!): User!
+  upsertUser(input: UpsertUserInput!): User!
+}
+
+type Query {
+  getUserById(input: FindById!): User!
+  getUserKuy: [User!]!
+}
+
+input UpsertUserInput {
+  name: String!
+}
+
+type User {
+  amount: Float!
+  id: Float!
+  name: String!
+}
